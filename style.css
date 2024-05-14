@@ -1,0 +1,86 @@
+:root {
+    /*--- farvepalette ---*/
+    --clr_dark: #181818;
+    --clr_light: #fffcfa;
+    --clr_main: #4d6242;
+    --clr_accent: #c24620;
+
+    /*--- typografier ---*/
+    --header_font: embarcadero-mvb-pro-condense, sans-serif;
+    /* font weights:
+        condensed = 400
+        medium = 500
+        bold = 700
+        extra bold = 800
+        black = 900
+    */
+    --main_font: ofelia-text, sans-serif;
+    /* font weights:
+        light = 300
+        regular = 400
+        medium = 500
+        semibold = 600
+        bold = 700
+    */
+}
+
+/* ------------------
+    GENEREL STYLING
+--------------------- */
+
+body {
+    background-color: var(--clr_light);
+    color: var(--clr_dark);
+    font-family: var(--main_font);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--header_font);
+}
+
+/* ------------------
+    NAVIGATION
+--------------------- */
+
+nav {
+    background-color: var(--clr_main);
+    color: var(--clr_light);
+    display: flex;
+    gap: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    justify-content: space-between;
+    padding: 10px 50px;
+    text-transform: uppercase;
+}
+
+.menu {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.menu_item {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu_arrow {
+    height: 1.1rem;
+}
+
+.menu_icons {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu_icons img {
+    height: 25%;
+    padding: 0 10%;
+}
+
+.sub_menu {
+    display: none;
+}
