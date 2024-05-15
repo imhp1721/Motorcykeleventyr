@@ -27,6 +27,7 @@
     --xl_font: 3rem;
     --l_font: clamp(1rem, 2vw, 2.2rem);
     --m_font: clamp(0.5rem, 1.2vw, 1.4rem);
+    --xs_font: clamp(0.2rem, 1vw, 1rem);
 }
 
 /* ------------------
@@ -39,13 +40,16 @@ body {
     font-family: var(--main_font);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, button {
     font-family: var(--header_font);
 }
 
-h3 {
-    font-size: var(--l_font);
-    padding-bottom: 5%;
+.cta_btn {
+    background-color: var(--clr_accent);
+    color: var(--clr_light);
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* ------------------
@@ -380,23 +384,28 @@ footer {
     color: var(--clr_light);
     display: grid;
     gap: 5%;
-    grid-template-rows: repeat(3, min-content);
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "contact some links"
     "news news news"
     "copyright copyright copyright";
-    margin-top: 100px;
-    padding: 5% 5%;
+    margin-top: 10%;
+    padding: 5%;
+}
 
-    overflow-y: hidden;
+footer h3 {
+    font-size: var(--l_font);
+    margin-bottom: 5%;
 }
 
 .contact {
     display: flex;
     flex-direction: column;
-    gap: 5%;
     grid-area: contact;
+}
+
+.contact p:not(:last-child) {
+    margin-bottom: 3%;
 }
 
 .some {
@@ -415,17 +424,55 @@ footer {
     align-items: flex-end;
     display: flex;
     flex-direction: column;
-    gap: 5%;
     grid-area: links;
+}
+
+.links a:not(:last-child) {
+    margin-bottom: 3%;
 }
 
 .news {
     display: flex;
     flex-direction: column;
     grid-area: news;
+    margin: 0 auto;
+    width: 45%;
+}
+
+.news h3 {
+    margin-bottom: 2%;
+}
+
+.news form {
+    border: 2px solid var(--clr_light);
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.news form input {
+    border: none;
+    background-color: transparent;
+    padding: 1% 2%;
+    width: 75%;
+}
+
+.news form input::placeholder {
+    color: var(--clr_light);
+    font-family: var(--main_font);
+    font-size: var(--xs_font);
+    font-weight: 300;
+    opacity: .8;
+}
+
+.news form button {
+    border: 0;
+    border-left: 2px solid var(--clr_light);
+    width: 25%;
 }
 
 .copy {
+    font-size: var(--xs_font);
     grid-area: copyright;
+    margin-top: 2%;
 }
 
