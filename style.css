@@ -25,7 +25,7 @@
 
     /*--- skriftstørrelser ---*/
     --xl_font: 3rem;
-    --l_font: 1.5rem;
+    --l_font: clamp(1rem, 2vw, 2.2rem);
     --m_font: clamp(0.5rem, 1.2vw, 1.4rem);
 }
 
@@ -43,6 +43,11 @@ h1, h2, h3, h4 {
     font-family: var(--header_font);
 }
 
+h3 {
+    font-size: var(--l_font);
+    padding-bottom: 5%;
+}
+
 /* ------------------
     NAVIGATION
 --------------------- */
@@ -52,6 +57,12 @@ header {
     flex-direction: column;
 }
 
+.hero_img {
+    max-height: 58vh;
+    object-fit: cover;
+    transform-origin: center;
+}
+
 nav {
     background-color: var(--clr_main);
     color: var(--clr_light);
@@ -59,15 +70,18 @@ nav {
     gap: 5%;
     font-size: var(--m_font);
     font-weight: 500;
-    height: fit-content;
     justify-content: space-between;
     padding: 1% 5%;
     text-transform: uppercase;
 }
 
 .logo_link {
-    height: 100%;
-    max-width: 12%;
+    display: inline-block;
+    width: 10%;
+}
+
+.logo_img {
+    display: block;
 }
 
 .logo_link:hover > .logo_img {
@@ -78,7 +92,7 @@ nav {
     align-self: flex-end;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 83%;
 }
 
 .menu_item {
@@ -95,13 +109,12 @@ nav {
     align-items: flex-start;
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
-    width: 8%;
+    width: 7%;
 }
 
 .menu_icons img {
     cursor: pointer;
-    height: 40%;
+    height: 45%;
     max-width: 50%;
 }
 
@@ -112,3 +125,63 @@ nav {
 .sub_menu {
     display: none;
 }
+
+
+/* ------------------
+    FOOTER
+--------------------- */
+
+footer {
+    background-color: var(--clr_main);
+    color: var(--clr_light);
+    display: grid;
+    gap: 5%;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "contact some links"
+    "news news news"
+    "copyright copyright copyright";
+    margin-top: 100px;
+    padding: 5% 5%;
+
+    overflow-y: hidden;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    grid-area: contact;
+}
+
+.some {
+    align-items: center;
+    display: flex;
+    grid-area: some;
+    justify-content: center;
+}
+
+.some a {
+    margin: 0 5%;
+    width: 20%;
+}
+
+.links {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    grid-area: links;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    grid-area: news;
+}
+
+.copy {
+    grid-area: copyright;
+}
+
