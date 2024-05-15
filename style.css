@@ -24,7 +24,7 @@
     */
 
     /*--- skriftstørrelser ---*/
-    --xl_font: 3rem;
+    --xl_font: clamp(2rem, 3.2vw, 3rem);
     --l_font: clamp(1rem, 2vw, 2.2rem);
     --m_font: clamp(0.5rem, 1.2vw, 1.4rem);
     --xs_font: clamp(0.2rem, 1vw, 1rem);
@@ -42,6 +42,11 @@ body {
 
 h1, h2, h3, h4, button {
     font-family: var(--header_font);
+}
+
+h1 {
+    font-size: var(--xl_font);
+    font-weight: 800;
 }
 
 .cta_btn {
@@ -242,9 +247,15 @@ nav {
 
 
 
+/* ------------------
+    FEJLSIDE
+--------------------- */
 
-
-
+.error_main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
