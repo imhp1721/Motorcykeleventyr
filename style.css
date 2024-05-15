@@ -270,8 +270,14 @@ nav {
     width: 40%;
 }
 
+.error_main a {
+    width: 12%;
+}
+
 .error_main .cta_btn {
     font-size: var(--m_font);
+    padding: 2%;
+    width: 100%;
 }
 
 
