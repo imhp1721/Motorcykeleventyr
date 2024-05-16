@@ -321,8 +321,48 @@ nav {
 
 
 /* ------ BOOKING ------ */
+.booking_outer {
+    background-color: var(--clr_light);
+    border: 5px solid var(--clr_main);
+    margin-top: 20vh;
+    height: 500px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 
+}
 
+.dot {
+    height: 2lh;
+    width: 2lh;
+    background-color: var( --clr_light);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot1 {
+    background-color: var(--clr_dark);
+}
+
+.booking_icons {
+    background-color: var(--clr_main);
+    display: flex;
+    justify-content: space-between;
+    padding: 1lh;
+}
+
+.booking_icons img {
+    height: 10vh;
+}
+
+.booking_info_white, .booking_pay_white, .booking_flag_white {
+
+}
+
+.booking_info_black, .booking_pay_black, .booking_flag_black {
+    display: none;
+
+}
 
 
 
