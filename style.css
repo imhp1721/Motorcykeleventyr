@@ -26,7 +26,7 @@
     /*--- skriftstørrelser ---*/
     --xl_font: clamp(2rem, 3.2vw, 3rem);
     --l_font: clamp(1rem, 2vw, 2.2rem);
-    --m_font: clamp(0.5rem, 1.2vw, 1.4rem);
+    --m_font: clamp(0.5rem, 1.3vw, 1.5rem);
     --xs_font: clamp(0.2rem, 1vw, 1rem);
 }
 
@@ -117,6 +117,7 @@ nav {
     cursor: pointer;
     display: flex;
     gap: .6vw;
+    position: relative;
 }
 
 .menu_arrow {
@@ -141,9 +142,31 @@ nav {
 }
 
 .sub_menu {
+    background-color: var(--clr_light);
+    border: 3px solid var(--clr_main);
+    color: var(--clr_main);
     display: none;
+    flex-direction: column;
+    font-weight: 500;
+    left: -10%;
+    min-width: 120%;
+    padding: 1vw;
+    position: absolute;
+    /* transform: translateY(-100%);
+    transition: translate 400ms ease-in; */
+    top: 150%;
+    width: max-content;
 }
 
+.sub_menu.show {
+    display: flex;
+    /* transform: translateY(0); */
+}
+
+.sub_menu li {
+    margin: 5% 0;
+    white-space: nowrap;
+}
 
 /* ------------------
     FORSIDE
