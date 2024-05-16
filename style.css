@@ -4,6 +4,7 @@
     --clr_light: #fffcfa;
     --clr_main: #4d6242;
     --clr_accent: #c24620;
+    --clr_logo: #C07334;
 
     /*--- typografier ---*/
     --header_font: embarcadero-mvb-pro-condense, sans-serif;
@@ -114,14 +115,29 @@ nav {
 }
 
 .menu_item {
-    cursor: pointer;
     display: flex;
     gap: .6vw;
     position: relative;
 }
 
+.menu_item > p:hover,
+.menu_item > a:hover {
+    color: var(--clr_logo);
+}
+
+.menu_item p {
+    cursor: pointer;
+}
+
 .menu_arrow {
+    cursor: pointer;
     height: 1.2vw;
+    rotate: 0deg;
+    transition: rotate 400ms ease-in;
+}
+
+.menu_arrow.rotate {
+    rotate: 90deg;
 }
 
 .menu_icons {
@@ -145,27 +161,33 @@ nav {
     background-color: var(--clr_light);
     border: 3px solid var(--clr_main);
     color: var(--clr_main);
-    display: none;
+    display: flex;
     flex-direction: column;
-    font-weight: 500;
-    left: -10%;
+    font-weight: 600;
+    left: -20%;
     min-width: 120%;
+    opacity: 0;
     padding: 1vw;
     position: absolute;
-    /* transform: translateY(-100%);
-    transition: translate 400ms ease-in; */
     top: 150%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 400ms ease-in;
     width: max-content;
 }
 
 .sub_menu.show {
-    display: flex;
-    /* transform: translateY(0); */
+    opacity: 1;
+    transform: scaleY(1);
 }
 
 .sub_menu li {
     margin: 5% 0;
     white-space: nowrap;
+}
+
+.sub_menu li a:hover {
+    color: var(--clr_accent);
 }
 
 /* ------------------
