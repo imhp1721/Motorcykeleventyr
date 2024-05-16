@@ -56,6 +56,10 @@ h2 {
     margin: 2% 0;
 }
 
+h3 {
+    font-size: var(--l_font);
+}
+
 .cta_btn {
     background-color: var(--clr_accent);
     border: none;
@@ -170,9 +174,8 @@ nav {
     --carousel-item-height: 28%;
     --carousel-item-width: 20%;
     width: 100%;
-    margin-top: 5%;
   }
-  
+
 .carousel_container {
     align-items: center;
     display: flex;
@@ -234,8 +237,9 @@ nav {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 13%;
-    margin-bottom: 15%;
+    /* margin-top: 13%;
+    margin-bottom: 15%; */
+   margin-top: 30vh;
   }
 
 .carousel_control {
@@ -263,6 +267,7 @@ nav {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 32vh;
 }
 
 .upcoming article {
@@ -271,6 +276,10 @@ nav {
 
 .upcoming p {
     margin-bottom: 1.5lh;
+}
+
+.upcoming section a h3:hover {
+    color: var( --clr_accent);
 }
 
 .upcoming section {
@@ -290,7 +299,7 @@ nav {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 15vh;
 }
 
 .index_news {
