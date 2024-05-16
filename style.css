@@ -149,6 +149,171 @@ nav {
     FORSIDE
 --------------------- */
 
+.welcome {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4vh;
+    margin-bottom: 1.5lh;
+}
+
+.welcome h5 {
+    margin-top: -1lh;
+}
+
+
+/* Forside karrusel */
+.carousel {
+    --carousel-height: 30vh;
+    --carousel-width: 90%;
+    --carousel-item-height: 28%;
+    --carousel-item-width: 20%;
+    width: 100%;
+    margin-top: 5%;
+  }
+  
+.carousel_container {
+    align-items: center;
+    display: flex;
+    min-height: var(--carousel-height);
+    margin: 0 auto;
+    max-width: var(--carousel-width);
+    position: relative;
+  }
+  
+.carousel_item {
+    height: var(--carousel-item-height);
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    width: var(--carousel-item-width);
+    z-index: 0;
+  }
+  
+.carousel_item_1 {
+    left: 15%;
+    opacity: 0.4;
+  }
+  
+.carousel_item_2,
+.carousel_item_4 {
+    height: calc(var(--carousel-item-height) * 1.5);
+    opacity: 1;
+    width: calc(var(--carousel-item-width) * 1.5);
+    z-index: 1;
+  }
+  
+.carousel_item_2 {
+    left: 30%;
+    }
+  
+.carousel_item_3 {
+    height: calc(var(--carousel-item-height) * 2);
+    opacity: 1;
+    left: 50%;
+    width: calc(var(--carousel-item-width) * 2);
+    z-index: 2;
+  }
+  
+.carousel_item_4 {
+    left: 70%;
+}
+  
+.carousel_item_5 {
+    left: 85%;
+    opacity: 0.4;
+  }
+
+
+/* Forside karrusel pile */
+
+.carousel_controls {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13%;
+    margin-bottom: 15%;
+  }
+
+.carousel_control {
+    cursor: pointer;
+    height: 4hv;
+    width: 4vh;
+    margin: 0 2%;
+    z-index: 10;
+  }
+
+.carousel_control:hover {
+    opacity: 0.7;
+}
+
+.carousel_control_previous {
+    transform: rotate(180deg);
+}
+
+
+/* Forside: Kommende arrengementer */
+.upcoming {
+    display: grid;
+    grid-template: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upcoming article {
+    grid-column: 1/span 3;
+}
+
+.upcoming p {
+    margin-bottom: 1.5lh;
+}
+
+.upcoming section {
+    grid-column: span 1;
+    text-align: center;
+}
+
+
+.upcoming img {
+   width: 28vw;
+}
+
+
+/* Forside: Nyhedsbrev */
+
+.newsletter {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.index_news {
+    padding-top: 2lh;
+    width: 100%;
+    text-align: center;
+}
+
+.index_news input {
+    width: 60vw;
+    height: 2lh;
+}
+
+
+.index_news button {
+    width: 15vw;
+}
+
+
+
+
+
+
 
 
 
