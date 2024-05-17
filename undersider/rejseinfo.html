@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links til stylesheets -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
 
     <!-- Link til typografier -->
     <link rel="stylesheet" href="https://use.typekit.net/unr4cqe.css">
 
     <!-- Link til javascript -->
-    <script src="script.js" defer></script>
+    <script src="../script.js" defer></script>
     
     <!-- Ikon til webfane -->
-    <link rel="icon" type="image/x-icon" href="img/ikoner/fane_ikon.png">
+    <link rel="icon" type="image/x-icon" href="../img/ikoner/fane_ikon.png">
 
     <title>Rejseinformation | Motorcykeleventyr</title>
 </head>
@@ -26,7 +26,7 @@
         <!-- Sitets navigation -->
         <nav>
             <a class="logo_link" href="index.html">
-                <img class="logo_img" src="img/logo.png" alt="Motorcykeleventyr logo">
+                <img class="logo_img" src="../img/logo.png" alt="Motorcykeleventyr logo">
             </a>
             <!-- Menu med menupunkter og undermenuer -->
             <ul class="menu">
@@ -35,7 +35,7 @@
                 </li>
                 <li class="menu_item" id="rejser">
                     <p>rejser</p>
-                    <img class="menu_arrow" id="arrow_rejser" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
+                    <img class="menu_arrow" id="arrow_rejser" src="../img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
                     <ul class="sub_menu" id="sub_rejser">
                         <li>
                             <a href="rejseinfo.html">rejseinformation</a>
@@ -50,7 +50,7 @@
                 </li>
                 <li class="menu_item" id="arrangementer">
                     <p>arrangementer</p>
-                    <img class="menu_arrow" id="arrow_arrangementer" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
+                    <img class="menu_arrow" id="arrow_arrangementer" src="../img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
                     <ul class="sub_menu" id="sub_arrangementer">
                         <li>
                             <a href="kommende.html">kommende</a>
@@ -71,7 +71,7 @@
                 </li>
                 <li class="menu_item" id="om_os">
                     <p>om os</p>
-                    <img class="menu_arrow" id="arrow_om_os" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
+                    <img class="menu_arrow" id="arrow_om_os" src="../img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
                     <ul class="sub_menu" id="sub_om_os">
                         <li>
                             <a href="hvem.html">hvem er vi?</a>
@@ -90,8 +90,8 @@
             </ul>
             <!-- Søgeikon med søgefelt og kurv -->
             <div class="menu_icons">
-                <img id="search_btn" src="img/ikoner/sog.png" alt="Søg">
-                <img id="cart_btn" src="img/ikoner/kurv.png" alt="Kurv">
+                <img id="search_btn" src="../img/ikoner/sog.png" alt="Søg">
+                <img id="cart_btn" src="../img/ikoner/kurv.png" alt="Kurv">
                 <div class="search_bar" id="search_bar">
                     <form action="search">
                         <input type="search" placeholder="Søg...">
@@ -104,27 +104,40 @@
 
     <!-- Content til siden "rejseinformation" -->
     <main>
-        <section>
-            <h1></h1>
-            <h5></h5>
+        <section class="info_welcome">
+            <h1>Rejseinformation</h1>
+            <h5>
+                Her hos Motorcykeleventyr tilbyder vi to motorcykelrejser til udlandet. Den ene går til Spanien i samarbejde med OplevEuropa og den anden går til Polen, som er vores begyndervenlige tur.
+            </h5>
+            <h5>
+                Du kan komme afsted i foråret eller efteråret til begge destinationer.
+            </h5>
         </section>
-        <section>
-            <article>
-                <h2></h2>
-                <img src="" alt="">
-                <p></p>
-                <a href="">
-                    <button></button>
-                </a>
+        <section class="travel_info">
+            <article class="spain">
+                <h2>Tag til Spanien med OplevEuropa.com</h2>
+                <img src="../img/spanien.jpg" alt="MC kørsel på vej mellem klipper">
+                <div class="info_txt">
+                    <p>
+                        Vi har i samarbejde med OplevEuropa arrangeret en motorcykelrejse til Spanien. Her er vi din guide igennem det flotte spanske landskab, og fordi vi står for alt det praktiske, så skal du kun bekymre dig om de vidunderlige udsigter, det lækre lokale køkken og at nyde sydens sol.  
+                    </p>
+                    <a href="spanien.html">
+                        <button class="cta_btn">læs mere</button>
+                    </a>
+                </div>
             </article>
-            <img src="" alt="">
-            <article>
-                <h2></h2>
-                <img src="" alt="">
-                <p></p>
-                <a href="">
-                    <button></button>
-                </a>
+            <img class="info_illustration" src="../img/illustration.png" alt="Illustration af mc der kører mod sin destination">
+            <article class="poland">
+                <h2>Offroad rookietur til Polen</h2>
+                <img src="../img/polen.jpg" alt="MC kørsel gennem skov">
+                <div class="info_txt">
+                    <p>
+                        Kom med på en motorcykelrejse til Polen, hvor alle kan være med! Vi sikrer dig en begyndervenlig rejse igennem Polens flotte natur og får samtidig trænet dine offroad-evner sammen med os.
+                    </p>
+                    <a href="polen.html">
+                        <button class="cta_btn">læs mere</button>
+                    </a>
+                </div>
             </article>
         </section>
     </main>
@@ -139,10 +152,10 @@
         </section>
         <section class="some">
             <a href="https://www.facebook.com/groups/motorcykeleventyr">
-                <img src="img/ikoner/facebook.png" alt="Facebook ikon">
+                <img src="../img/ikoner/facebook.png" alt="Facebook ikon">
             </a>
             <a href="https://www.instagram.com/motorcykeleventyr.nu/">
-                <img src="img/ikoner/instagram.png" alt="Instagram ikon">
+                <img src="../img/ikoner/instagram.png" alt="Instagram ikon">
             </a>
         </section>
         <section class="links">

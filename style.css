@@ -57,6 +57,12 @@ h2 {
     margin: 2% 0;
 }
 
+h5 {
+    font-size: var(--l_font);
+    margin-bottom: 2%;
+    text-align: center;
+}
+
 .cta_btn {
     background-color: var(--clr_accent);
     border: none;
@@ -381,13 +387,30 @@ FORSIDE
     width: 100%;
 }
 
+/* ---------------------
+    REJSEINFORMATION
+------------------------ */
 
+.info_welcome {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5% 3%;
+}
 
+.travel_info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, );
+}
 
+.travel_info article h2 {
+    grid-column: span 3;
+}
 
-
-
-
+.travel_info article .info_txt {
+    grid-column: span 2;
+}
 
 
 
