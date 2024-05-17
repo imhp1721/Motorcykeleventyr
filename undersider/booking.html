@@ -20,64 +20,67 @@
     <title>Forside | Motorcykeleventyr</title>
 </head>
 <body>
+    <!-- Sitets header -->
     <header>
-        <img class="hero_img" src="img/hero/index.jpg" alt="Motorcykel stejler på grusvej">
+    
+        <!-- Sitets navigation -->
         <nav>
             <a class="logo_link" href="index.html">
                 <img class="logo_img" src="img/logo.png" alt="Motorcykeleventyr logo">
             </a>
+            <!-- Menu med menupunkter og undermenuer -->
             <ul class="menu">
                 <li class="menu_item">
                     <a href="index.html">forside</a>
                 </li>
-                <li class="menu_item">
+                <li class="menu_item" id="rejser">
                     <p>rejser</p>
-                    <img class="menu_arrow" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
-                    <ul class="sub_menu">
+                    <img class="menu_arrow" id="arrow_rejser" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
+                    <ul class="sub_menu" id="sub_rejser">
                         <li>
-                            <a href="#">rejseinformation</a>
+                            <a href="rejseinfo.html">rejseinformation</a>
                         </li>
                         <li>
-                            <a href="#">spanien</a>
+                            <a href="spanien.html">spanien</a>
                         </li>
                         <li>
-                            <a href="#">polen</a>
+                            <a href="polen.html">polen</a>
                         </li>
                     </ul>
                 </li>
-                <li class="menu_item">
+                <li class="menu_item" id="arrangementer">
                     <p>arrangementer</p>
-                    <img class="menu_arrow" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
-                    <ul class="sub_menu">
+                    <img class="menu_arrow" id="arrow_arrangementer" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
+                    <ul class="sub_menu" id="sub_arrangementer">
                         <li>
-                            <a href="#">kommende</a>
+                            <a href="kommende.html">kommende</a>
                         </li>
                         <li>
-                            <a href="#">offroad-tur</a>
+                            <a href="offroad.html">offroad-tur</a>
                         </li>
                         <li>
-                            <a href="#">juletur</a>
+                            <a href="juletur.html">juletur</a>
                         </li>
                         <li>
-                            <a href="#">kurser</a>
+                            <a href="kurser.html">kurser</a>
                         </li>
                         <li>
-                            <a href="#">foredrag</a>
+                            <a href="foredrag.html">foredrag</a>
                         </li>
                     </ul>
                 </li>
-                <li class="menu_item">
+                <li class="menu_item" id="om_os">
                     <p>om os</p>
-                    <img class="menu_arrow" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
-                    <ul class="sub_menu">
+                    <img class="menu_arrow" id="arrow_om_os" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
+                    <ul class="sub_menu" id="sub_om_os">
                         <li>
-                            <a href="#">hvem er vi?</a>
+                            <a href="hvem.html">hvem er vi?</a>
                         </li>
                         <li>
-                            <a href="#">samarbejdspartnere</a>
+                            <a href="samarbejde.html">samarbejdspartnere</a>
                         </li>
                         <li>
-                            <a href="#">skruefællesskab</a>
+                            <a href="skrue.html">skruefællesskab</a>
                         </li>
                     </ul>
                 </li>
@@ -86,16 +89,19 @@
                 </li>
             </ul>
             <div class="menu_icons">
-                <img src="img/ikoner/sog.png" alt="Søg">
-                <img src="img/ikoner/kurv.png" alt="Kurv">
+                <img id="search_btn" src="img/ikoner/sog.png" alt="Søg">
+                <img id="cart_btn" src="img/ikoner/kurv.png" alt="Kurv">
+                <div class="search_bar" id="search_bar">
+                    <form action="search">
+                        <input type="search" placeholder="Søg...">
+                        <button class="cta_btn">Søg</button>
+                    </form>
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Velkommen til Motorcykeleventyr</h1>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde sunt quaerat commodi ex voluptate amet quidem nisi. Alias sunt quis tempore possimus numquam hic veritatis assumenda autem quisquam. Magnam.</h5>
-        </section>
+        
     </main>
     <footer>
         <section class="contact">
