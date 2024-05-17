@@ -67,6 +67,16 @@ h2 {
     text-transform: uppercase;
 }
 
+input,
+input::placeholder {
+    font-family: var(--main_font);
+    font-size: var(--xs_font);
+}
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
 /* ------------------
     NAVIGATION
 --------------------- */
@@ -140,23 +150,6 @@ nav {
     rotate: 90deg;
 }
 
-.menu_icons {
-    align-items: flex-start;
-    display: flex;
-    justify-content: space-between;
-    width: 7%;
-}
-
-.menu_icons img {
-    cursor: pointer;
-    height: 45%;
-    max-width: 50%;
-}
-
-.menu_icons img:hover {
-    opacity: .7;
-}
-
 .sub_menu {
     background-color: var(--clr_light);
     border: 3px solid var(--clr_main);
@@ -176,11 +169,6 @@ nav {
     width: max-content;
 }
 
-.sub_menu.show {
-    opacity: 1;
-    transform: scaleY(1);
-}
-
 .sub_menu li {
     margin: 5% 0;
     white-space: nowrap;
@@ -190,8 +178,76 @@ nav {
     color: var(--clr_accent);
 }
 
+.menu_icons {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 7%;
+}
+
+.menu_icons img {
+    cursor: pointer;
+    height: 45%;
+    max-width: 50%;
+}
+
+.menu_icons img:hover {
+    opacity: .7;
+}
+
+.search_bar {
+    background-color: var(--clr_light);
+    border: 3px solid var(--clr_main);
+    display: flex;
+    opacity: 0;
+    padding: 5%;
+    position: absolute;
+    right: 0;
+    top: 120%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 400ms ease-in;
+    width: 30vw;
+}
+
+.search_bar form {
+    display: flex;
+    gap: 5px;
+    
+    width: 100%;
+}
+
+.search_bar form input {
+    border: none;
+    background-color: transparent;
+    padding: 2%;
+    width: 80%;
+}
+
+.search_bar form input::placeholder {
+    color: var(--clr_dark);
+    font-family: var(--main_font);
+    font-size: var(--xs_font);
+    font-weight: 300;
+    opacity: .8;
+}
+
+.search_bar form input:focus {
+    outline: 2px solid var(--clr_main);
+}
+
+.search_bar .cta_btn {
+    width: 20%;
+}
+
+.show {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
 /* ------------------
-    FORSIDE
+FORSIDE
 --------------------- */
 
 
@@ -533,7 +589,6 @@ footer h3 {
 
 .news form input::placeholder {
     color: var(--clr_light);
-    font-family: var(--main_font);
     font-size: var(--xs_font);
     font-weight: 300;
     opacity: .8;
