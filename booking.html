@@ -13,6 +13,7 @@
 
     <!-- Link til javascript -->
     <script src="script.js" defer></script>
+    <script src="booking.js" defer></script>
     
     <!-- Ikon til webfane -->
     <link rel="icon" type="image/x-icon" href="img/ikoner/fane_ikon.png">
@@ -110,26 +111,50 @@
                 <img src="img/ikoner/flag_hvid.png" alt="" class="booking_flag_white">
                 <img src="img/ikoner/flag_sort.png" alt="" class="booking_flag_black">
             </div>
-
-            <div class="booking_inner"> <!-- Grid beholder for alle bookingsidens udersider -->
-                <div class="booking_1"> <!-- Indhold til bookings første side -->
-
+            
+            <div class="booking_1"> <!-- Indhold til bookings første side -->
+                <div class="tekst">
+                    <h2 class="booking_destination">Rejse til Polen</h2> <!-- Class så det, der bookes let kan ændres i JS -->
+                    <p>
+                    <!-- Spans med hver deres classes så indholdet hurtigt kan ændres i JS -->
+                    Antal dage: <span class="booking_days">X </span> <br>
+                    Dato:<span class="booking_departure"> DD/MM/YY</span> <br>
+                    Hotel: <span class="booking_hotel">X</span><br>
+                    Leje af udstyr: <span class="booking_rental">Gennem X</span> <br>
+                    <br>
+                        <div class="booking_ppl_travelling">
+                            <p>Vælg antal rejsende</p>
+                            <div class="booking_ppl_btn">
+                                <span class="minus">-</span>
+                                <span class="number">01</span>
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+                    </p> 
                 </div>
 
-                <div class="booking_2"> <!-- Indhold til bookings anden side -->
-
+                <div class="booking_price">
+                    XXXkr.
                 </div>
 
-                <div class="booking_3"> <!-- Indhold til bookings trejde side -->
-
-                </div>
-
-                <div class="booking_4"> <!-- Indhold til bookings fjerde side -->
-
-                </div>
+                <h3 class="booking_next">NÆSTE</h3>
 
             </div>
-        </div>
+
+            <div class="booking_2"> <!-- Indhold til bookings anden side -->
+            
+            </div>
+
+            <div class="booking_3"> <!-- Indhold til bookings trejde side -->
+
+            </div>
+
+            <div class="booking_4"> <!-- Indhold til bookings fjerde side -->
+
+            </div>
+
+        
+        </div> <!-- Slut booking_outer -->
 
 
     </main>

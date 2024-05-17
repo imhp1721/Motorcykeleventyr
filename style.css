@@ -324,18 +324,17 @@ nav {
 /* Booking top */
 .booking_outer {
     background-color: var(--clr_light);
-    border: 1vw solid var(--clr_main);
-    margin-top: 20vh;
-    height: 500px;
-    width: 80%;
+    border: 0.5vw solid var(--clr_main);
+    margin-top: 15vh;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 
 }
 
 .dot {
-    height: 1.5lh;
-    width: 1.5lh;
+    height: 1lh;
+    width: 1lh;
     background-color: var( --clr_light);
     border-radius: 50%;
     display: inline-block;
@@ -357,7 +356,7 @@ nav {
 }
 
 .booking_icons img {
-    height: 9vh;
+    height: 3lh;
 }
 
 .booking_info_white, .booking_pay_white, .booking_flag_white {
@@ -368,14 +367,103 @@ nav {
     display: none;
 }
 
-/* Booking indre */
-.booking_inner {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+.booking_next {
+    display: inline;
+    background-color: var(--clr_accent);
+    color: var(--clr_light);
+    padding: 0.1lh 0.5lh;
+    box-shadow: 0 2px 5px var(--clr_dark);
+    cursor: pointer;
+    font-size: 15pt; 
+    font-weight: 400;
+
 }
 
-/* Bookings første side */
+
+
+/* BBOKINGS FØRSTE SIDE*/
+
+
+.booking_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto 1fr auto; 
+    gap: 10px; 
+}
+
+.tekst {
+    grid-column: 1; 
+    grid-row: 1 / span 3; 
+    line-height: 2lh;
+    padding: 0.5lh;
+
+}
+
+.booking_destination {
+    /* font-size: var(--l_font); */
+    font-size: 20pt; 
+    font-weight: 600;
+    margin: 2% 0;
+}
+
+.booking_ppl_travelling {
+    grid-column: 1; /* Første kolonne */
+    grid-row: 3; /* Tredje række */
+}
+
+.booking_price {
+    grid-column: 2; 
+    grid-row: 1; 
+    justify-self: end; 
+    display: inline-flex;
+    color: var(--clr_main);
+    border: 3px solid var(--clr_main);
+    padding: 1.5lh;
+    margin-top: 1lh;
+    margin-right: 1lh;
+}
+
+.booking_next {
+    grid-column: 2; 
+    grid-row: 3; 
+    justify-self: end; 
+    margin: 1lh;
+}
+
+
+
+
+
+
+/* Bookings første side Vælg antal rejsende */
+.booking_ppl_travelling {
+    display: flex;
+    align-items: center;
+}
+
+.booking_ppl_travelling p {
+    padding-right: 10px;
+}
+
+.booking_ppl_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--clr_main);
+    box-shadow: 0 2px 5px var(--clr_dark);
+}
+
+.booking_ppl_btn span {
+    padding: 0 0.2lh;
+}
+
+.minus, .plus {
+    background-color: var(--clr_main);
+    color: var(--clr_light);
+    cursor: pointer;
+}
+
+
 /* Bookings anden side */
 /* Bookings trejde side */
 /* Bookings fjerde side */
