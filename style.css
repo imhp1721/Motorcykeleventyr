@@ -329,16 +329,17 @@ nav {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-
+    position: relative;
 }
 
+
 .dot {
-    height: 1lh;
-    width: 1lh;
+    height: 1.5vw;
+    width: 1.5vw;
     background-color: var( --clr_light);
     border-radius: 50%;
     display: inline-block;
-    margin-top: 1lh;
+    margin-top: 1.5vw;
 }
 
 .dot1 {
@@ -356,7 +357,7 @@ nav {
 }
 
 .booking_icons img {
-    height: 3lh;
+    height: 4vw;
 }
 
 .booking_info_white, .booking_pay_white, .booking_flag_white {
@@ -367,49 +368,53 @@ nav {
     display: none;
 }
 
-.booking_next {
-    display: inline;
-    background-color: var(--clr_accent);
-    color: var(--clr_light);
-    padding: 0.1lh 0.5lh;
-    box-shadow: 0 2px 5px var(--clr_dark);
-    cursor: pointer;
-    font-size: 15pt; 
-    font-weight: 400;
-
-}
-
 
 
 /* BBOKINGS FØRSTE SIDE*/
-
 
 .booking_1 {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto 1fr auto; 
     gap: 10px; 
+    position: relative;
+    display: none;
 }
 
-.tekst {
+.booking_next {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     background-color: var(--clr_accent);
+     color: var(--clr_light);
+     padding: 0.1lh 1.5lh;
+     box-shadow: 0 2px 5px var(--clr_dark);
+     cursor: pointer;
+     font-family: var(--main_font);
+     font-size: 15pt; 
+     margin-right: 0.5lh;
+     margin-bottom: 0.5lh;
+}
+  
+
+
+.booking_1_txt {
     grid-column: 1; 
     grid-row: 1 / span 3; 
     line-height: 2lh;
     padding: 0.5lh;
+}
 
+.booking_1_txt h2 {
+    font-family: var(--l_font);
 }
 
 .booking_destination {
-    /* font-size: var(--l_font); */
     font-size: 20pt; 
     font-weight: 600;
     margin: 2% 0;
 }
 
-.booking_ppl_travelling {
-    grid-column: 1; /* Første kolonne */
-    grid-row: 3; /* Tredje række */
-}
 
 .booking_price {
     grid-column: 2; 
@@ -423,23 +428,16 @@ nav {
     margin-right: 1lh;
 }
 
-.booking_next {
-    grid-column: 2; 
-    grid-row: 3; 
-    justify-self: end; 
-    margin: 1lh;
-}
-
-
-
-
-
 
 /* Bookings første side Vælg antal rejsende */
 .booking_ppl_travelling {
+    grid-column: 1; 
+    grid-row: 3;
     display: flex;
     align-items: center;
+    width: 200%;
 }
+
 
 .booking_ppl_travelling p {
     padding-right: 10px;
@@ -464,9 +462,143 @@ nav {
 }
 
 
-/* Bookings anden side */
-/* Bookings trejde side */
-/* Bookings fjerde side */
+
+
+/* BOOKINGS ANDEN SIDE */
+/* Ikonskift */
+.dot2 {
+    background-color: var(--clr_dark);
+}
+
+.booking_info_white {
+    display: none;
+}
+
+.booking_info_black {
+    display: block;
+}
+/* Booking_2 */
+.booking_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto 1fr auto; 
+    gap: 10px; 
+    display: ;
+}
+
+.booking_2_txt {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    padding-left: 1vw;
+}
+
+.booking_2_txt h2 {
+    font-family: var(--l_font);
+}
+
+
+.booking_2 input {
+    margin: 1lh;
+    height: 2.5vh;
+    padding: 1vw;
+    border: 2px solid var(--clr_main);
+    font-family: var(--main_font);
+    font-size: var(--xs_font);
+}
+
+.booking_next {
+    grid-row: 3; 
+    grid-column: 2; 
+    align-items: end; 
+}
+
+
+
+
+/* Styling af de enkelte input bokse */
+.booking_info1 {
+    grid-row: 2 ;
+    grid-column: 1 / span 2;
+}
+
+.booking_info1 input:first-child {
+    width: 40%;
+    margin-right: 8%;
+}
+
+.booking_info1 input:nth-child(2){
+    width: 35%;
+}
+
+
+.booking_info2 {
+    grid-row: 3;
+    grid-column: 1/ span 2;
+}
+
+.booking_info2 input:first-child {
+    width: 28%;
+    margin-right: 1%;
+}
+
+.booking_info2 input:nth-child(2) {
+    margin-right: 1%;
+}
+
+.booking_info3 {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+}
+
+.booking_info3 input:first-child {
+    width: 40%;
+    margin-right: 1.2%;
+}
+
+.booking_info3 input:nth-child(2) {
+    width: 12%;
+    margin-right: 2%;
+
+}
+
+.booking_info4 {
+    grid-row: 5;
+    grid-column: 1/ span 2;
+}
+
+.booking_info4 input:first-child {
+    width: 30%;
+    margin-right: 2%;
+}
+
+
+
+
+
+
+
+
+/* BOOKINGS TREJDE SIDE */
+.booking_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto 1fr auto; 
+    gap: 10px; 
+    display: none;
+}
+
+
+
+
+
+/* BOOKINGS FJERDE SIDE */
+.booking_4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto 1fr auto; 
+    gap: 10px; 
+    display: none;
+}
 
 
 

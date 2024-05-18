@@ -5,34 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links til stylesheets -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
 
     <!-- Link til typografier -->
     <link rel="stylesheet" href="https://use.typekit.net/unr4cqe.css">
 
     <!-- Link til javascript -->
-    <script src="script.js" defer></script>
+    <script src="../script.js" defer></script>
+    <script src="../booking.js" defer></script>
     
     <!-- Ikon til webfane -->
-    <link rel="icon" type="image/x-icon" href="img/ikoner/fane_ikon.png">
+    <link rel="icon" type="image/x-icon" href="../img/ikoner/fane_ikon.png">
 
-    <title>Forside | Motorcykeleventyr</title>
+    <title>Booking | Motorcykeleventyr</title>
 </head>
 <body>
     <header>
-        <img class="hero_img" src="img/hero/index.jpg" alt="Motorcykel stejler på grusvej">
         <nav>
-            <a class="logo_link" href="index.html">
-                <img class="logo_img" src="img/logo.png" alt="Motorcykeleventyr logo">
+            <a class="logo_link" href="../index.html">
+                <img class="logo_img" src="../img/logo.png" alt="Motorcykeleventyr logo">
             </a>
             <ul class="menu">
                 <li class="menu_item">
-                    <a href="index.html">forside</a>
+                    <a href="../index.html">forside</a>
                 </li>
                 <li class="menu_item">
                     <p>rejser</p>
-                    <img class="menu_arrow" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
+                    <img class="menu_arrow" src="../img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
                     <ul class="sub_menu">
                         <li>
                             <a href="#">rejseinformation</a>
@@ -47,7 +47,7 @@
                 </li>
                 <li class="menu_item">
                     <p>arrangementer</p>
-                    <img class="menu_arrow" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
+                    <img class="menu_arrow" src="../img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
                     <ul class="sub_menu">
                         <li>
                             <a href="#">kommende</a>
@@ -68,7 +68,7 @@
                 </li>
                 <li class="menu_item">
                     <p>om os</p>
-                    <img class="menu_arrow" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
+                    <img class="menu_arrow" src="../img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
                     <ul class="sub_menu">
                         <li>
                             <a href="#">hvem er vi?</a>
@@ -86,18 +86,121 @@
                 </li>
             </ul>
             <div class="menu_icons">
-                <img src="img/ikoner/sog.png" alt="Søg">
-                <img src="img/ikoner/kurv.png" alt="Kurv">
+                <img src="../img/ikoner/sog.png" alt="Søg">
+                <img src="../img/ikoner/kurv.png" alt="Kurv">
             </div>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h1>Velkommen til Motorcykeleventyr</h1>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde sunt quaerat commodi ex voluptate amet quidem nisi. Alias sunt quis tempore possimus numquam hic veritatis assumenda autem quisquam. Magnam.</h5>
-        </section>
-        <img src="../img/" alt="">
+        <div class="booking_outer">
+            <div class="booking_icons">
+                <span class="dot dot1"></span>
+                <span class="dot dot1"></span>
+                <img src="../img/ikoner/pin_sort.png" alt="">
+                <span class="dot dot2"></span>
+                <span class="dot dot2"></span>
+                <img src="../img/ikoner/info_hvid.png" alt="" class="booking_info_white">
+                <img src="../img/ikoner/info_sort.png" alt="" class="booking_info_black">
+                <span class="dot dot3"></span>
+                <span class="dot dot3"></span>
+                <img src="../img/ikoner/betaling_hvid.png" alt="" class="booking_pay_white">
+                <img src="../img/ikoner/betaling_sort.png" alt="" class="booking_pay_black">
+                <span class="dot dot3"></span>
+                <span class="dot dot3"></span>
+                <img src="../img/ikoner/flag_hvid.png" alt="" class="booking_flag_white">
+                <img src="../img/ikoner/flag_sort.png" alt="" class="booking_flag_black">
+            </div>
+
+            
+            <div class="booking_1"> <!-- Indhold til bookings første side -->
+                <div class="booking_1_txt">
+                    <h2 class="booking_destination">Rejse til Polen</h2> <!-- Class så det, der bookes let kan ændres i JS -->
+                    <p>
+                    <!-- Spans med hver deres classes så indholdet hurtigt kan ændres i JS -->
+                    Antal dage: <span class="booking_days">X </span> <br>
+                    Dato:<span class="booking_departure"> DD/MM/YY</span> <br>
+                    Hotel: <span class="booking_hotel">X</span><br>
+                    Leje af udstyr: <span class="booking_rental">Gennem X</span> <br>
+                    <br>
+                        <div class="booking_ppl_travelling">
+                            <p>Vælg antal rejsende</p>
+                            <div class="booking_ppl_btn">
+                                <span class="minus">-</span>
+                                <span class="number">01</span>
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+                    </p> 
+                </div>
+
+                <div class="booking_price">
+                    XXXkr.
+                </div>
+
+                <h3 class="booking_next">NÆSTE</h3> 
+
+            </div>
+
+            <div class="booking_2"> <!-- Indhold til bookings anden side -->
+                <div class="booking_2_txt">
+                    <h2>Udfyld personinformationer</h2>
+                    <p>Udfyld som det fremgår i dit pas.</p>
+                </div>
+                
+                <div class="booking_info1">
+                    <input type="text" name="first" placeholder="Fornavn(e)*" required>
+                    <input type="text" name="last" placeholder="Efternavn*" required>
+                </div>
+
+                <div class="booking_info2">
+                    <input type="text" name="birth" placeholder="Fødselsdato DD/MM/YY*" required>
+                    <input type="text" name="natio" placeholder="Nationalitet*" required>
+                    <input type="text" name="pas" placeholder="Pasnummer*" required>
+                </div>
+
+                <div class="booking_info3">
+                    <input type="text" name="addr" placeholder="Adresse*" required>
+                    <input type="text" name="post" placeholder="Postnr.*" required>
+                    <input type="text" name="city" placeholder="By*" required>
+                </div>
+
+                <div class="booking_info4">
+                    <input type="email" name="email" placeholder="Email*" required>
+                    <input type="tel" name="tele" placeholder="Telefonnummer">
+                </div>
+
+
+
+
+                <h3 class="booking_next">NÆSTE</h3> 
+            
+            </div>
+
+            <div class="booking_3"> <!-- Indhold til bookings trejde side -->
+
+
+
+
+                <h3 class="booking_next">NÆSTE</h3> 
+
+            </div>
+
+            <div class="booking_4"> <!-- Indhold til bookings fjerde side -->
+
+
+
+
+                <h3 class="booking_next">NÆSTE</h3> 
+
+            </div>
+            
+
+        </div> <!-- Slut booking_outer -->
+
+
     </main>
+
     <footer>
         <section class="contact">
             <h3>Kontakt</h3>
@@ -107,10 +210,10 @@
         </section>
         <section class="some">
             <a href="https://www.facebook.com/groups/motorcykeleventyr">
-                <img src="img/ikoner/facebook.png" alt="Facebook ikon">
+                <img src="../img/ikoner/facebook.png" alt="Facebook ikon">
             </a>
             <a href="https://www.instagram.com/motorcykeleventyr.nu/">
-                <img src="img/ikoner/instagram.png" alt="Instagram ikon">
+                <img src="../img/ikoner/instagram.png" alt="Instagram ikon">
             </a>
         </section>
         <section class="links">
