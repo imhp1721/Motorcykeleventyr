@@ -27,7 +27,8 @@
     /*--- skriftstørrelser ---*/
     --xl_font: clamp(2rem, 3.2vw, 3rem);
     --l_font: clamp(1rem, 2vw, 2.2rem);
-    --m_font: clamp(0.5rem, 1.3vw, 1.5rem);
+    --m_font: clamp(0.75rem, 1.5vw, 1.5rem);
+    --s_font: clamp(0.5rem, 1.2vw, 1.2rem);
     --xs_font: clamp(0.2rem, 1vw, 1rem);
 }
 
@@ -59,6 +60,7 @@ h2 {
 
 h5 {
     font-size: var(--l_font);
+    line-height: 150%;
     margin-bottom: 2%;
     text-align: center;
 }
@@ -103,7 +105,7 @@ nav {
     color: var(--clr_light);
     display: flex;
     gap: 5%;
-    font-size: var(--m_font);
+    font-size: var(--s_font);
     font-weight: 500;
     justify-content: space-between;
     padding: 1% 5%;
@@ -395,23 +397,49 @@ FORSIDE
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 0 5% 3%;
+    margin: 3% 5%;
 }
 
 .travel_info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, );
+    margin: 0 5%;
 }
 
-.travel_info article h2 {
+.travel_info > img {
+    margin: 10% 5%;
+    width: 90%;
+}
+
+.info_section {
+    display: grid;
+    column-gap: 5%;    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, );
+    margin-bottom: 5%;
+}
+
+.travel_info .info_section h2 {
     grid-column: span 3;
 }
 
-.travel_info article .info_txt {
+.travel_info .info_section .info_txt {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--m_font);
+    gap: 20%;
     grid-column: span 2;
+    line-height: 200%;
 }
 
+.travel_info .info_section .info_txt a {
+    width: 30%;
+}
+
+.travel_info .info_section .info_txt .cta_btn {
+    font-size: var(--m_font);
+    padding: 4%;
+    width: 100%;
+}
 
 
 
