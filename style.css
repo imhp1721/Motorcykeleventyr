@@ -321,12 +321,12 @@ nav {
 
 
 /* ------ BOOKING ------ */
-/* Booking top */
+/* Booking ramme og top */
 .booking_outer {
     background-color: var(--clr_light);
     border: 0.5vw solid var(--clr_main);
     margin-top: 15vh;
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -465,6 +465,7 @@ nav {
     background-color: var(--clr_dark);
 }
 
+
 .booking_info_white {
     display: none;
 }
@@ -479,7 +480,7 @@ nav {
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto 1fr auto; 
     gap: 10px; 
-    display: none;
+    display: ;
 }
 
 .booking_2_txt {
@@ -588,7 +589,7 @@ nav {
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto 1fr auto; 
     gap: 10px; 
-    display: ;
+    display: none;
 }
 
 
@@ -600,7 +601,7 @@ nav {
 
 .booking3_price {
     grid-column: 2;
-    grid-row: 1 / span 2; 
+    grid-row: 1;
     justify-self: end; 
     display: inline-flex;
     color: var(--clr_main);
@@ -609,6 +610,7 @@ nav {
     margin-top: 1lh;
     margin-right: 1lh;
 }
+
 
 .booking_check {
     display: inline-block;
@@ -644,7 +646,8 @@ nav {
     margin-left: 3vw;
     display: inline-flex;
     align-items: center;
-    padding-bottom: 0.5lh;
+    padding-bottom: 1lh;
+    padding-top: 1lh;
 
 }
 
@@ -690,13 +693,53 @@ nav {
 
 
 /* BOOKINGS FJERDE SIDE */
+/* Ikonskift */
+.dot4 {
+    background-color: var(--clr_dark);
+}
+
+
+.booking_flag_white {
+    display: none;
+}
+
+.booking_flag_black {
+    display: block;
+}
+
+/* Booking_4 */
 .booking_4 {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto 1fr auto; 
     gap: 10px; 
+    margin: 1lh;
     display: none;
 }
+
+.booking4_confirm {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+.booking4_booked {
+    grid-row: 5;
+    grid-column: 1 / span 2;
+}
+
+.booking4_booked p {
+    padding-top: 0.8lh;
+}
+
+
+
+.booking4_booked h2 {
+    width: 70%;
+    border-bottom: 2px solid var(--clr_dark);
+}
+
+
+
 
 
 
