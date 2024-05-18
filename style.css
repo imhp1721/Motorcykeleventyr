@@ -360,17 +360,13 @@ nav {
     height: 4vw;
 }
 
-.booking_info_white, .booking_pay_white, .booking_flag_white {
-
-}
-
 .booking_info_black, .booking_pay_black, .booking_flag_black {
     display: none;
 }
 
 
 
-/* BBOKINGS FØRSTE SIDE*/
+/* B0OKINGS FØRSTE SIDE*/
 
 .booking_1 {
     display: grid;
@@ -395,7 +391,6 @@ nav {
      margin-right: 0.5lh;
      margin-bottom: 0.5lh;
 }
-  
 
 
 .booking_1_txt {
@@ -477,13 +472,14 @@ nav {
 .booking_info_black {
     display: block;
 }
+
 /* Booking_2 */
 .booking_2 {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto 1fr auto; 
     gap: 10px; 
-    display: ;
+    display: none;
 }
 
 .booking_2_txt {
@@ -512,10 +508,7 @@ nav {
     align-items: end; 
 }
 
-
-
-
-/* Styling af de enkelte input bokse */
+/* Booking_2: Styling af de enkelte input bokse */
 .booking_info1 {
     grid-row: 2 ;
     grid-column: 1 / span 2;
@@ -574,19 +567,124 @@ nav {
 
 
 
-
-
-
-
 /* BOOKINGS TREJDE SIDE */
+/* Ikonskift */
+.dot3 {
+    background-color: var(--clr_dark);
+}
+
+.booking_pay_white {
+    display: none;
+}
+
+.booking_pay_black {
+    display: block;
+}
+
+/* Booking_3 */
+
 .booking_3 {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto 1fr auto; 
     gap: 10px; 
-    display: none;
+    display: ;
 }
 
+
+.booking_3 h2 {
+    grid-row: 1;
+    padding: 0.5lh;
+    font-family: var(--l_font);  
+}
+
+.booking3_price {
+    grid-column: 2;
+    grid-row: 1 / span 2; 
+    justify-self: end; 
+    display: inline-flex;
+    color: var(--clr_main);
+    border: 3px solid var(--clr_main);
+    padding: 1.5lh;
+    margin-top: 1lh;
+    margin-right: 1lh;
+}
+
+.booking_check {
+    display: inline-block;
+    width: 0.8lh;
+    height: 0.8lh;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--clr_main);
+    margin-left: 3.2vw;
+    margin-top: 0.5lh;
+}
+
+
+/* Booking_3: Placering af checkbokse */
+
+
+.booking_check1 {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+
+.booking_check2 {
+    grid-row: 5;
+}
+
+.booking_check3 {
+    grid-row: 6;
+}
+
+.booking_terms {
+    grid-row: 7;
+    grid-column: 1 / span 2;
+    margin-left: 3vw;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 0.5lh;
+
+}
+
+.booking_terms_check {
+    margin-right: 0.4lh;
+}
+
+
+
+
+/* Booking_3: Placering og styling af input */
+.booking_3 input {
+    grid-column: 1 / span 2;
+    height: 2.5vh;
+    padding: 1vw;
+    border: 2px solid var(--clr_main);
+    font-family: var(--main_font);
+    font-size: var(--xs_font);
+    
+}
+
+.booking3_card_no {
+    grid-row: 3;
+    width: 50%;
+    margin-left: 6vw;
+}
+
+.booking3_card {
+    grid-row: 4;
+}
+
+.booking3_card_date {
+    width: 40%;
+    margin-left: 6vw;
+    margin-right: 3vw;
+}
+
+.booking3_card_cvv {
+    width: 25%;
+}
 
 
 
