@@ -114,31 +114,34 @@
 
             
             <div class="booking_1"> <!-- Indhold til bookings første side -->
+                <h2 class="booking_destination">Rejse til Polen</h2> <!-- Class så det, der bookes let kan ændres i JS -->
+                    
                 <div class="booking_1_txt">
-                    <h2 class="booking_destination">Rejse til Polen</h2> <!-- Class så det, der bookes let kan ændres i JS -->
-                    <p>
-                    <!-- Spans med hver deres classes så indholdet hurtigt kan ændres i JS -->
-                    Antal dage: <span class="booking_days">X </span> <br>
-                    Dato:<span class="booking_departure"> DD/MM/YY</span> <br>
-                    Hotel: <span class="booking_hotel">X</span><br>
-                    Leje af udstyr: <span class="booking_rental">Gennem X</span> <br>
-                    <br>
-                        <div class="booking_ppl_travelling">
-                            <p>Vælg antal rejsende</p>
-                            <div class="booking_ppl_btn">
-                                <span class="minus">-</span>
-                                <span class="number">01</span>
-                                <span class="plus">+</span>
-                            </div>
+                    <p><!-- Spans med hver deres classes så indholdet hurtigt kan ændres i JS -->
+                        Antal dage: <span class="booking_days">X </span> <br>
+                        Dato:<span class="booking_departure"> DD/MM/YY</span> <br>
+                        Hotel: <span class="booking_hotel">X</span><br>
+                        Leje af udstyr: <span class="booking_rental">Gennem X</span> <br>
+                        <br>
+                    </p>
+                    <div class="booking_ppl_travelling"> 
+                        <p>Vælg antal rejsende</p>
+                        <div class="booking_ppl_btn"> <!-- Knap: Vælg antal rejsende -->
+                            <span class="minus">-</span>
+                            <span class="number">01</span>
+                             <span class="plus">+</span>
                         </div>
-                    </p> 
+                    </div>
                 </div>
+               
+                     
+                
 
                 <div class="booking_price">
                     XXXkr.
                 </div>
 
-                <h3 class="booking_next">NÆSTE</h3> 
+                <h3 class="booking_next" id="booking1_next">NÆSTE</h3> 
 
             </div>
 
@@ -232,7 +235,7 @@
 
 
                 <a href="../index.html">
-                    <h3 class="booking_next">GÅ TIL FORSIDEN</h3> 
+                    <h3 class="booking_frontpage">GÅ TIL FORSIDEN</h3> 
                 </a>
 
             </div>
