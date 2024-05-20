@@ -273,6 +273,7 @@ nav {
 }
 
 /* Karrusel: Flip Through Elements In A 3D Space - Carousel.js - link: https://www.cssscript.com/flip-element-carousel/ */
+/* Udkommenterede originale styles er ændret for at tilpasse layoutet/designstilen */
 
 /* page styles */
 .ax-hidden {
@@ -474,7 +475,6 @@ nav {
    width: 28vw;
 }
 
-
 /* Forside: Nyhedsbrev */
 
 .newsletter {
@@ -500,7 +500,9 @@ nav {
     width: 15vw;
 }
 
-/* ------ BOOKING ------ */
+/* -------------- 
+    BOOKING 
+----------------- */
 
 /* Booking ramme og top */
 .booking_outer {
@@ -545,7 +547,7 @@ nav {
     display: none;
 }
 
-/* B0OKINGS FØRSTE SIDE*/
+/* BOOKINGS FØRSTE SIDE*/
 .booking_1 {
     display: grid;
     grid-template-columns: 1fr 1fr; 

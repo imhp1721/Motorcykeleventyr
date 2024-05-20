@@ -104,8 +104,7 @@ cartBtn.addEventListener("click", function() {
     alert("Tak for din interresse i vores produkter. Shoppen er på vej, men er endnu ikke færdigudviklet.")
 });
 
-
-// funktionalitet til ANMELDELSESKARUSEL
+// funktionalitet til ANMELDELSESKARUSEL i index.html
 // Karrusel: Flip Through Elements In A 3D Space - Carousel.js - link: https://www.cssscript.com/flip-element-carousel/
 
 'use strict';
