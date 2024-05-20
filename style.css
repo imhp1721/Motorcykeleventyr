@@ -1090,11 +1090,20 @@ nav {
     font-size: var(--xs_font);
 }
 
+.asterisk {
+    color: var(--clr_accent);
+    font-weight: 600;
+}
+
 .travels_booking {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
     width: 50%;
+}
+
+.travels_link {
+    color: var(--clr_accent);
 }
 
 .travels_book {
