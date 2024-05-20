@@ -529,7 +529,7 @@ nav {
 .booking_ppl_travelling {
     display: flex;
     align-items: center;
-    width: 200%;
+    width: 100%;
 }
 
 .booking_ppl_travelling p {
