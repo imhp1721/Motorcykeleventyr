@@ -40,7 +40,7 @@ bookingChecks.forEach(checkbox => { //Kode gentages for alle checkbokse
         });
 
         // Bg farve, når klikket
-        checkbox.style.backgroundColor = checkbox.classList.contains("checked") ? '' : "green"; //SKAL ÆNDRES TIL var(--clt_main)
+        checkbox.style.backgroundColor = checkbox.classList.contains("checked") ? '' : "var(--clr_main)";
 
         // Ændrer om den er checked eller ej. Hvis den allerede er det fjernes den. Hvis ikke tilføjes den
         checkbox.classList.toggle("checked");
