@@ -114,6 +114,7 @@ nav {
     justify-content: space-between;
     padding: 1% 5%;
     text-transform: uppercase;
+    z-index: 3;
 }
 
 .logo_link {
