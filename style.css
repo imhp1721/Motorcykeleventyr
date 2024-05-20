@@ -259,7 +259,7 @@ nav {
 }
 
 /* ------------------
-FORSIDE
+    FORSIDE
 --------------------- */
 
 .welcome {
@@ -427,9 +427,8 @@ FORSIDE
     width: 15vw;
 }
 
-
-
 /* ------ BOOKING ------ */
+
 /* Booking ramme og top */
 .booking_outer {
     background-color: var(--clr_light);
@@ -441,7 +440,6 @@ FORSIDE
     position: relative;
     min-height: 80vh;
 }
-
 
 .dot {
     height: 1.5vw;
@@ -474,8 +472,6 @@ FORSIDE
     display: none;
 }
 
-
-
 /* B0OKINGS FØRSTE SIDE*/
 .booking_1 {
     display: grid;
@@ -501,9 +497,6 @@ FORSIDE
      margin-bottom: 0.5lh;
 }
 
-
-
-
 .booking_destination {
     padding: 0.5lh;
     grid-column: 1 / span 2;
@@ -520,8 +513,6 @@ FORSIDE
     margin-top: -5vh;
 }
 
-
-
 .booking_price {
     grid-column: 2; 
     grid-row: 1; 
@@ -534,14 +525,12 @@ FORSIDE
     margin-right: 1lh;
 }
 
-
 /* Bookings første side Vælg antal rejsende */
 .booking_ppl_travelling {
     display: flex;
     align-items: center;
     width: 200%;
 }
-
 
 .booking_ppl_travelling p {
     padding-right: 10px;
@@ -564,8 +553,6 @@ FORSIDE
     color: var(--clr_light);
     cursor: pointer;
 }
-
-
 
 /* BOOKINGS ANDEN SIDE */
 .booking_2 {
@@ -596,8 +583,6 @@ FORSIDE
     font-size: var(--xs_font);
 }
 
-
-
 /* Booking_2: Styling af de enkelte input bokse */
 .booking_info1 {
     grid-row: 2 ;
@@ -612,7 +597,6 @@ FORSIDE
 .booking_info1 input:nth-child(2){
     width: 35%;
 }
-
 
 .booking_info2 {
     grid-row: 3;
@@ -654,9 +638,6 @@ FORSIDE
     margin-right: 2%;
 }
 
-
-
-
 /* BOOKINGS TREJDE SIDE */
 .booking_3 {
     display: grid;
@@ -665,7 +646,6 @@ FORSIDE
     gap: 10px; 
     display: none;
 }
-
 
 .booking_3 h2 {
     grid-row: 1;
@@ -697,9 +677,7 @@ FORSIDE
     margin-top: 0.5lh;
 }
 
-
 /* Booking_3: Placering af checkbokse */
-
 
 .booking_check1 {
     grid-row: 2;
@@ -728,9 +706,6 @@ FORSIDE
 .booking_terms_check {
     margin-right: 0.4lh;
 }
-
-
-
 
 /* Booking_3: Placering og styling af input */
 .booking_3 input {
@@ -763,9 +738,6 @@ FORSIDE
     width: 25%;
 }
 
-
-
-
 /* BOOKINGS FJERDE SIDE */
 .booking_4 {
     display: grid;
@@ -790,8 +762,6 @@ FORSIDE
     padding-top: 0.8lh;
 }
 
-
-
 .booking4_booked h2 {
     width: 70%;
     border-bottom: 2px solid var(--clr_dark);
@@ -811,117 +781,6 @@ FORSIDE
     margin-right: 0.5lh;
     margin-bottom: 0.5lh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------------
     FEJLSIDE
@@ -999,46 +858,10 @@ FORSIDE
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------
     KONTAKT
 --------------------- */
+
 .contact_main {
     align-items: center;
     display: flex;
@@ -1143,67 +966,6 @@ FORSIDE
     padding: 2.5%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------
     FOOTER
 --------------------- */
@@ -1303,4 +1065,3 @@ footer h3 {
     grid-area: copyright;
     margin-top: 2%;
 }
-

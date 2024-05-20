@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 let allInputsFilled = true;
 
                 requiredInputs.forEach(input => {
-                    if (!input.value.trim()) { // Tjek om inputværdien er tom eller kun whitespace
+                    if (!input.value.trim()) { // Tjek om inputværdien er tom eller kun whitespace(det udfyldte består kun af mellemrum)
                         allInputsFilled = false;
                     }
                 });
