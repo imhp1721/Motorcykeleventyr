@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links til stylesheets -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link til typografier -->
+    <link rel="stylesheet" href="https://use.typekit.net/unr4cqe.css">
+
+    <!-- Link til javascript -->
+    <script src="script.js" defer></script>
+    
+    <!-- Ikon til webfane -->
+    <link rel="icon" type="image/x-icon" href="img/ikoner/fane_ikon.png">
+
+    <title>Kontakt os | Motorcykeleventyr</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo_link" href="index.html">
+                <img class="logo_img" src="img/logo.png" alt="Motorcykeleventyr logo">
+            </a>
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="index.html">forside</a>
+                </li>
+                <li class="menu_item">
+                    <p>rejser</p>
+                    <img class="menu_arrow" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
+                    <ul class="sub_menu">
+                        <li>
+                            <a href="#">rejseinformation</a>
+                        </li>
+                        <li>
+                            <a href="#">spanien</a>
+                        </li>
+                        <li>
+                            <a href="#">polen</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu_item">
+                    <p>arrangementer</p>
+                    <img class="menu_arrow" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
+                    <ul class="sub_menu">
+                        <li>
+                            <a href="#">kommende</a>
+                        </li>
+                        <li>
+                            <a href="#">offroad-tur</a>
+                        </li>
+                        <li>
+                            <a href="#">juletur</a>
+                        </li>
+                        <li>
+                            <a href="#">kurser</a>
+                        </li>
+                        <li>
+                            <a href="#">foredrag</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu_item">
+                    <p>om os</p>
+                    <img class="menu_arrow" src="img/ikoner/pil_hvid.png" alt="Pil - udfold undermenu">
+                    <ul class="sub_menu">
+                        <li>
+                            <a href="#">hvem er vi?</a>
+                        </li>
+                        <li>
+                            <a href="#">samarbejdspartnere</a>
+                        </li>
+                        <li>
+                            <a href="#">skruefællesskab</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu_item">
+                    <a href="kontakt.html">kontakt</a>
+                </li>
+            </ul>
+            <div class="menu_icons">
+                <img src="img/ikoner/sog.png" alt="Søg">
+                <img src="img/ikoner/kurv.png" alt="Kurv">
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact_main">
+
+
+        <h1>Kontakt os</h1>
+
+        <section class="contact_info">
+            <div class="info_text">
+                <p>Hvis du har spørgsmål til vores rejser eller andet feedback er du velkommen til at kontakte os på mail, telefon eller via kontaktformularen. 
+                </p>
+
+                <div class="contact_box">
+                    <div class="contact_left">
+                        <h4>Telefonnummer:</h4>
+                        <h4>E-mail:</h4>
+                    </div>
+                    <div class="contact_right">
+                        <p>+45 29733563</p>
+                        <p>EMCTMAIL@GMAIL.COM</p>
+                    </div>
+                </div>
+            </div>
+        
+            <form class="contact_form" action="#">
+                <input type="name" name="text" placeholder="Navn">
+                <input type="email" name="text" placeholder="E-mail">
+                <input type="telephone" name="text" placeholder="Telefon">
+                <textarea name="textarea" name="text" placeholder="Din bedsked..."></textarea>
+                <button class="cta_btn" type="submit">tilmeld</button>
+            </form>
+        </section>
+
+        <section class="faq">
+            <h2 id="faq">FAQ</h2>
+            <div class="faq_box">
+                <p>Hvordan får jeg mine penge retur?</p>
+                <img src="img/ikoner/plus.svg" alt="plus tegn">
+            </div>
+            <div class="faq_box">
+                <p>Hvad koster rejsen til Polen?</p>
+                <img src="img/ikoner/plus.svg" alt="plus tegn">
+            </div>
+            <div class="faq_box">
+                <p>Hvor mange pladser/deltager er der til Spanien?</p>
+                <img src="img/ikoner/plus.svg" alt="plus tegn">
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <section class="contact">
+            <h3>Kontakt</h3>
+            <p>Telefon: +45 29 73 35 63</p>
+            <p>E-mail: emctmail@gmail.com</p>
+            <p>CVR: 32814549</p>
+        </section>
+        <section class="some">
+            <a href="https://www.facebook.com/groups/motorcykeleventyr">
+                <img src="img/ikoner/facebook.png" alt="Facebook ikon">
+            </a>
+            <a href="https://www.instagram.com/motorcykeleventyr.nu/">
+                <img src="img/ikoner/instagram.png" alt="Instagram ikon">
+            </a>
+        </section>
+        <section class="links">
+            <h3>Links</h3>
+            <a href="rejseinfo.html">Rejseinformation</a>
+            <a href="kommende.html">Arrangementer</a>
+            <a href="#fortrydelsesret">Fortrydelsesret</a>
+            <a href="#faq">FAQ</a>
+        </section>
+        <section class="news">
+            <h3>Nyhedsbrev</h3>
+            <form action="getNews">
+                <input type="email" placeholder="eksempel@mail.dk">
+                <button class="cta_btn" type="submit">tilmeld</button>
+            </form>
+        </section>
+        <p class="copy">Copyright Motorcykeleventyr 2024</p>
+    </footer>
+</body>
+</html>

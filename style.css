@@ -326,23 +326,112 @@ nav {
 
 
 
+/* ------------------
+    KONTAKT
+--------------------- */
+.contact_main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    row-gap: 3rem;
+}
 
+.contact_info {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 5%;
+    column-gap: 12%;
+}
 
+.info_text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
 
+.contact_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10%;
+}
 
+.contact_left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
 
+.contact_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 1.5rem;
+}
 
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    row-gap: 2.5rem;
+}
 
+.contact_form input {
+    border: 0.1rem solid var(--clr_dark);
+    background-color: transparent;
+    width: 100%;
+    padding: 1.5%;
+}
 
+.contact_form input::placeholder {
+    color: var(--clr_dark);
+    font-family: var(--main_font);
+    font-size: var(--xs_font);
+    font-weight: 300;
+    opacity: .8;
+}
 
+.contact_form button {
+    border: 0;
+    width: 60%;
+    padding: 1.5%;
+}
 
+.contact_form textarea { 
+    border: 0.1rem solid var(--clr_dark);
+    background-color: transparent;
+    width: 100%;
+    color: var(--clr_dark);
+    font-family: var(--main_font);
+    font-size: var(--xs_font);
+    font-weight: 300;
+    opacity: .8;
+    padding: 2%;
+    resize: none;
+    height: 8rem;
+}
 
+.faq {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    row-gap: 2rem;
+    padding-top: 2%;
+}
 
+#faq {
+    align-self: center;
+}
 
-
-
-
-
+.faq_box {
+    display: flex;
+    background-color: var(--clr_main);
+    color: var(--clr_light);
+    justify-content: space-between;
+    padding: 2.5%;
+}
 
 
 
