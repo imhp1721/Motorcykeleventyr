@@ -272,112 +272,185 @@ nav {
     margin-bottom: 1.5lh;
 }
 
-.welcome h5 {
-    margin-top: -1lh;
+/* Karrusel: Flip Through Elements In A 3D Space - Carousel.js - link: https://www.cssscript.com/flip-element-carousel/ */
+/* Udkommenterede originale styles er ændret for at tilpasse layoutet/designstilen */
+
+/* page styles */
+.ax-hidden {
+    visibility: hidden;
+    position: absolute;
 }
 
-
-/* Forside karrusel */
+/* carousel styles */
 .carousel {
-    --carousel-height: 30vh;
-    --carousel-width: 90%;
-    --carousel-item-height: 28%;
-    --carousel-item-width: 20%;
-    width: 100%;
-  }
+    --carousel-height: 400px;
+    --carousel-width: 1000px;
+    --carousel-item-height: 150px;
+    --carousel-item-width: 150px;
 
-.carousel_container {
+    width: 100%;
+}
+
+.carousel-container {
     align-items: center;
     display: flex;
     min-height: var(--carousel-height);
     margin: 0 auto;
-    max-width: var(--carousel-width);
+    /* max-width: var(--carousel-width); */
+    max-width: 90%;
     position: relative;
-  }
-  
-.carousel_item {
+}
+
+.carousel-item {
     height: var(--carousel-item-height);
     opacity: 0;
     position: absolute;
     transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
     width: var(--carousel-item-width);
     z-index: 0;
-  }
-  
-.carousel_item_1 {
+}
+
+.carousel-item-1 {
     left: 15%;
     opacity: 0.4;
-  }
-  
-.carousel_item_2,
-.carousel_item_4 {
+}
+
+.carousel-item-2,
+.carousel-item-4 {
     height: calc(var(--carousel-item-height) * 1.5);
     opacity: 1;
     width: calc(var(--carousel-item-width) * 1.5);
     z-index: 1;
-  }
-  
-.carousel_item_2 {
+}
+
+.carousel-item-2 {
     left: 30%;
-    }
-  
-.carousel_item_3 {
+}
+
+.carousel-item-3 {
+    /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1); */
     height: calc(var(--carousel-item-height) * 2);
     opacity: 1;
     left: 50%;
     width: calc(var(--carousel-item-width) * 2);
     z-index: 2;
-  }
-  
-.carousel_item_4 {
+}
+
+.carousel-item-4 {
     left: 70%;
 }
-  
-.carousel_item_5 {
+
+.carousel-item-5 {
     left: 85%;
     opacity: 0.4;
-  }
+}
 
-
-/* Forside karrusel pile */
-
-.carousel_controls {
+.carousel-controls {
     display: flex;
     justify-content: space-between;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-top: 13%;
-    margin-bottom: 15%; */
-   margin-top: 30vh;
-  }
+    margin: 0 5%;
+    transform: translateY(-220px);
+}
 
-.carousel_control {
+/* carousel button styles */
+.carousel-control {  
+    background-color: transparent;
+    /* border: 2px solid; */
+    border: none;
+    /* border-radius: 4px; */
+    /* color: #aaa; */
+    color: var(--clr_dark);
     cursor: pointer;
-    height: 4hv;
-    width: 4vh;
-    margin: 0 2%;
-    z-index: 10;
-  }
-
-.carousel_control:hover {
-    opacity: 0.7;
+    /* height: 22px; */
+    height: 30px;
+    /* margin: 0 20px; */
+    position: relative;
+    transform: scale(1.5);
+    transition: transform 0.5s ease-out;
+    width: 22px;
 }
 
-.carousel_control_previous {
-    transform: rotate(180deg);
+.carousel-control:hover {
+    transform: scale(1.3);
 }
 
+/* previous button */
+.carousel-control-previous::after,
+.carousel-control-previous::before {
+    box-sizing: border-box; 
+    content: '';
+    display: block;
+    height: 8px;
+    position: absolute;
+    top: 5px
+}
 
-/* Forside: Kommende arrengementer */
+/* .carousel-control-previous::before {
+    background: currentColor;
+    border-radius: 2px;
+    right: 11px;
+    width: 2px;
+} */
+
+/* .carousel-control-previous::after {
+    border-bottom: 4px solid transparent;
+    border-right: 5px solid;
+    border-top: 4px solid transparent;
+    right: 5px;
+    width: 0;
+} */
+
+.carousel-control-previous::after {
+    border-bottom: 12px solid transparent;
+    border-right: 15px solid;
+    border-top: 12px solid transparent;
+    right: 5px;
+    width: 0;
+}
+
+/* next button */
+.carousel-control-next::after,
+.carousel-control-next::before {
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    height: 8px;
+    position: absolute;
+    top: 5px
+}
+
+/* .carousel-control-next::before {
+    background: currentColor;
+    border-radius: 2px;
+    left: 11px;
+    width: 2px;
+} */
+
+/* .carousel-control-next::after {
+    border-bottom: 4px solid transparent;
+    border-left: 5px solid;
+    border-top: 4px solid transparent;
+    left: 5px;
+    width: 0;
+} */
+
+.carousel-control-next::after {
+    border-bottom: 12px solid transparent;
+    border-left: 15px solid;
+    border-top: 12px solid transparent;
+    left: 5px;
+    width: 0;
+}
+
+/* Forside: Kommende arrangementer */
+
 .upcoming {
     display: grid;
     grid-template: repeat(3, 1fr);
     gap: 20px;
+    margin: 0 5%;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 32vh;
 }
 
 .upcoming article {
@@ -401,7 +474,6 @@ nav {
 .upcoming img {
    width: 28vw;
 }
-
 
 /* Forside: Nyhedsbrev */
 
@@ -428,7 +500,9 @@ nav {
     width: 15vw;
 }
 
-/* ------ BOOKING ------ */
+/* -------------- 
+    BOOKING 
+----------------- */
 
 /* Booking ramme og top */
 .booking_outer {
@@ -473,7 +547,7 @@ nav {
     display: none;
 }
 
-/* B0OKINGS FØRSTE SIDE*/
+/* BOOKINGS FØRSTE SIDE*/
 .booking_1 {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -967,38 +1041,46 @@ nav {
 /* ------------------
     Polen rejseside
 --------------------- */
-.polen_main {
+.travels_heading {
+    position: absolute;
+    color: var(--clr_light);
+    align-self: center;
+    margin-top: 20%;
+
+}
+
+.travels_main {
     align-items: center;
     display: flex;
     flex-direction: column;
     padding-top: 2%;
 }
 
-.polen_date {
+.travels_date {
     font-weight: 600;
     font-size: var(--s_font);
     margin-bottom: 3%;
 }
 
-.polen_text {
+.travels_text {
     padding: 0 20%;
-    align-items: center;
+    text-align: center;
+    
 }
 
-.polen_info {
+.travels_info {
     display: flex;
     flex-direction: row;
-    margin: 5% 10%;
+    padding: 10% 17%;
     column-gap: 12%;
 }
 
 .info_text {
     display: flex;
-    padding: 0 5%;
     row-gap: 2rem;
 }
 
-.polen_price {
+.travels_price {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1008,25 +1090,25 @@ nav {
     font-size: var(--xs_font);
 }
 
-.polen_booking {
+.travels_booking {
     display: flex;
     flex-direction: column;
-    padding: 0 5%;
     row-gap: 1rem;
+    width: 50%;
 }
 
-.polen_book {
+.travels_book {
     width: 60%;
     align-self: center;
     padding: 2%;
     margin-top: 15%;
 }
 
-.polen_rute {
+.travels_rute {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 10%;
+    padding: 5% 10%;
 }
 
 .rute_text {
@@ -1039,6 +1121,38 @@ nav {
 
 .rute_img {
     max-width: 35%;
+}
+
+.travels_gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 5%;
+}
+
+.travels_year {
+    display: flex;
+    column-gap: 2rem;
+    padding-top: 10%;
+}
+
+.year_img {
+    display: flex;
+    width: 70%;
+}
+
+.year_text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+
+.year_gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 5%;
 }
 
 
