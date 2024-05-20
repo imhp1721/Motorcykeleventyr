@@ -560,7 +560,6 @@ nav {
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto 1fr auto; 
     gap: 10px; 
-    display: ;
 }
 
 .booking_2_txt {
@@ -644,7 +643,6 @@ nav {
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto 1fr auto; 
     gap: 10px; 
-    display: none;
 }
 
 .booking_3 h2 {
@@ -745,7 +743,6 @@ nav {
     grid-template-rows: auto 1fr auto; 
     gap: 10px; 
     margin: 1lh;
-    display: none;
 }
 
 .booking4_confirm {
