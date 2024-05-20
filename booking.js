@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
             page.style.display = "none";
         });
 
-        switch (activePage) { //swirch som alternativ til "if" "else"
+        switch (activePage) { //switch som alternativ til "if" "else"
             case 1: //booking_1
                 document.querySelector(".booking_1").style.display = "grid";
                 document.querySelectorAll(".dot1").forEach(dot => {
