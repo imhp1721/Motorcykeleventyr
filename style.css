@@ -965,6 +965,87 @@ nav {
 }
 
 /* ------------------
+    Polen rejseside
+--------------------- */
+.polen_main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+.polen_date {
+    font-weight: 600;
+    font-size: var(--s_font);
+    margin-bottom: 3%;
+}
+
+.polen_text {
+    padding: 0 20%;
+    align-items: center;
+}
+
+.polen_info {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 10%;
+    column-gap: 12%;
+}
+
+.info_text {
+    display: flex;
+    padding: 0 5%;
+    row-gap: 2rem;
+}
+
+.polen_price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mini_text {
+    font-size: var(--xs_font);
+}
+
+.polen_booking {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    row-gap: 1rem;
+}
+
+.polen_book {
+    width: 60%;
+    align-self: center;
+    padding: 2%;
+    margin-top: 15%;
+}
+
+.polen_rute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.rute_text {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8%;
+    align-items: flex-end;
+    padding-top: 5%;
+}
+
+.rute_img {
+    max-width: 35%;
+}
+
+
+
+
+
+/* ------------------
     FOOTER
 --------------------- */
 
