@@ -135,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
                 break;
             default:
+                Text = "Hov! Det ligner, at der er et problem med bookingsiden. Kontakt os venligst, og så finder vi frem til en løsning."
                 break;
         }
     }
