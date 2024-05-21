@@ -81,6 +81,7 @@ main p {
     font-size: var(--s_font);
     font-weight: 600;
     padding: 1%;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -93,6 +94,7 @@ textarea::placeholder {
     font-size: var(--s_font);
     font-weight: 300;
     opacity: .9;
+    overflow: visible;
 }
 
 input, 
@@ -187,12 +189,12 @@ nav {
 .menu_arrow {
     cursor: pointer;
     height: 1.2vw;
-    rotate: 0deg;
-    transition: rotate 400ms ease-in;
+    transform: rotate(0deg);
+    transition: transform 400ms ease-in;
 }
 
 .menu_arrow.rotate {
-    rotate: 90deg;
+    transform: rotate(90deg);
 }
 
 /* --- UNDERMENU --- */
@@ -484,7 +486,7 @@ nav {
 
 .upcoming {
     display: grid;
-    grid-template: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin: 0 5%;
     width: 90%;
@@ -606,7 +608,6 @@ nav {
     padding: 0.5lh;
     grid-column: 1 / span 2;
     grid-row: 1;
-    font-family: var(--l_font);
 }
 
 .booking_1_txt {
@@ -672,10 +673,6 @@ nav {
     grid-row: 1;
     grid-column: 1 / span 2;
     padding-left: 1vw;
-}
-
-.booking_2_txt h2 {
-    font-family: var(--l_font);
 }
 
 .booking_2 input {
@@ -756,7 +753,6 @@ nav {
 .booking_3 h2 {
     grid-row: 1;
     padding: 0.5lh;
-    font-family: var(--l_font);  
 }
 
 .booking3_price {
@@ -903,14 +899,9 @@ nav {
     width: 40%;
 }
 
-.error_main a {
-    width: 12%;
-}
-
 .error_main .cta_btn {
-    font-size: var(--m_font);
-    padding: 2%;
-    width: 100%;
+    font-weight: 500;
+    padding: .5% 1%;
 }
 
 /* ---------------------
@@ -941,7 +932,6 @@ nav {
     display: grid;
     column-gap: 5%;    
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, );
     margin-bottom: 5%;
 }
 
@@ -959,14 +949,10 @@ nav {
     line-height: 200%;
 }
 
-.travel_info .info_section .info_txt a {
-    width: 30%;
-}
-
 .travel_info .info_section .info_txt .cta_btn {
     font-size: var(--m_font);
-    padding: 4%;
-    width: 100%;
+    font-weight: 500;
+    width: 30%;
 }
 
 /* ------------------
@@ -1136,7 +1122,7 @@ nav {
     align-self: center;
     margin-top: 5%;
     padding: 2%;
-    width: 60%;
+    width: 50%;
 }
 
 /* --- RUTE SEKTION --- */
