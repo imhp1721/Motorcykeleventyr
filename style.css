@@ -921,7 +921,11 @@ nav {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 3% 5%;
+    margin: 3% 10%;
+}
+
+.info_welcome h5 {
+    font-size: var(--m_font);
 }
 
 .travel_info {
@@ -1237,6 +1241,10 @@ footer h3 {
 .some a {
     margin: 0 5%;
     width: 20%;
+}
+
+.some img:hover {
+    opacity: .7;
 }
 
 .links {
