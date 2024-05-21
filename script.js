@@ -1,6 +1,6 @@
 //funkionalitet til NAVIGATION
 
-//Funktion, der bruger parametre (menuId og arrowId) for at den kan virke til hvert menupunkt med hver deres undermenu
+//Funktion, der bruger parametre (menuId og arrowId) for at den kan virke til hvert menupunkt og pil med hver deres undermenu
 function toggleSubMenu(menuId, arrowId) {
     const arrow = document.getElementById(arrowId);
     const subMenu = document.getElementById(menuId);

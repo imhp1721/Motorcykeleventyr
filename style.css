@@ -69,29 +69,49 @@ h5 {
     text-align: center;
 }
 
+main p {
+    line-height: 150%;
+}
+
 .cta_btn {
     background-color: var(--clr_accent);
     border: none;
     color: var(--clr_light);
     cursor: pointer;
+    font-size: var(--s_font);
     font-weight: 600;
-    padding: .5%;
+    padding: 1%;
     text-transform: uppercase;
 }
 
-input,
-input::placeholder {
+/* --- FORM TEKSTINPUTFELTER --- */
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--clr_dark);
     font-family: var(--main_font);
-    font-size: var(--xs_font);
+    font-size: var(--s_font);
+    font-weight: 300;
+    opacity: .9;
+}
+
+input, 
+textarea {
+    background-color: transparent;
+    border: none;
+    outline: 2px solid var(--clr_dark);
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid var(--clr_dark);
 }
 
 input::-webkit-search-cancel-button {
     display: none;
 }
 
-/* ------------------
-    NAVIGATION
---------------------- */
+/* --- HEADER --- */
 
 header {
     display: flex;
@@ -101,9 +121,12 @@ header {
 .hero_img {
     max-height: 58vh;
     object-fit: cover;
-    position: static;
     transform-origin: center;
 }
+
+/* ------------------
+    NAVIGATION
+--------------------- */
 
 nav {
     background-color: var(--clr_main);
@@ -120,6 +143,8 @@ nav {
     z-index: 3;
 }
 
+/* --- LOGO --- */
+
 .logo_link {
     display: inline-block;
     width: 10%;
@@ -132,6 +157,8 @@ nav {
 .logo_link:hover > .logo_img {
     opacity: .7;
 }
+
+/* --- MENU --- */
 
 .menu {
     align-self: flex-end;
@@ -155,6 +182,8 @@ nav {
     cursor: pointer;
 }
 
+/* --- MENU PILE --- */
+
 .menu_arrow {
     cursor: pointer;
     height: 1.2vw;
@@ -165,6 +194,8 @@ nav {
 .menu_arrow.rotate {
     rotate: 90deg;
 }
+
+/* --- UNDERMENU --- */
 
 .sub_menu {
     background-color: var(--clr_light);
@@ -194,6 +225,8 @@ nav {
     color: var(--clr_accent);
 }
 
+/* --- MENU IKONER --- */
+
 .menu_icons {
     align-items: flex-start;
     display: flex;
@@ -211,6 +244,8 @@ nav {
 .menu_icons img:hover {
     opacity: .7;
 }
+
+/* --- SØGEFELT --- */
 
 .search_bar {
     background-color: var(--clr_light);
@@ -235,27 +270,25 @@ nav {
 }
 
 .search_bar form input {
-    border: none;
-    background-color: transparent;
+    outline: none;
     padding: 2%;
     width: 80%;
 }
 
 .search_bar form input::placeholder {
-    color: var(--clr_dark);
-    font-family: var(--main_font);
     font-size: var(--xs_font);
-    font-weight: 300;
-    opacity: .8;
 }
 
 .search_bar form input:focus {
+    border: none;
     outline: 2px solid var(--clr_main);
 }
 
 .search_bar .cta_btn {
     width: 20%;
 }
+
+/* ekstra class, bruges i javascript til visning af undermenuer og søgefelt */
 
 .show {
     opacity: 1;
@@ -276,6 +309,7 @@ nav {
 }
 
 /* Karrusel: Flip Through Elements In A 3D Space - Carousel.js - link: https://www.cssscript.com/flip-element-carousel/ */
+
 /* Udkommenterede originale styles er ændret for at tilpasse layoutet/designstilen */
 
 /* page styles */
@@ -446,7 +480,7 @@ nav {
     width: 0;
 }
 
-/* Forside: Kommende arrangementer */
+/* --- KOMMENDE ARRANGEMENTER SEKTION --- */
 
 .upcoming {
     display: grid;
@@ -473,50 +507,44 @@ nav {
     text-align: center;
 }
 
-
 .upcoming img {
    width: 28vw;
 }
 
-/* Forside: Nyhedsbrev */
+/* --- NYHEDSBREV SEKTION --- */
 
 .newsletter {
+    margin: 10% 5% 0;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15vh;
 }
 
 .index_news {
-    padding-top: 2lh;
+    padding-top: 3%;
     width: 100%;
-    text-align: center;
 }
 
 .index_news input {
-    width: 60vw;
-    height: 2lh;
+    padding: 1% 2%;
+    width: 70%;
 }
 
-
 .index_news button {
-    width: 15vw;
+    width: 25%;
 }
 
 /* -------------- 
     BOOKING 
 ----------------- */
 
-/* Booking ramme og top */
+/* --- RAMME OG TOP --- */
+
 .booking_outer {
     background-color: var(--clr_light);
     border: 0.5vw solid var(--clr_main);
-    margin-top: 10vh;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5% auto 0;
     position: relative;
-    min-height: 80vh;
+    min-height: 70vh;
+    width: 60%;
 }
 
 .dot {
@@ -536,10 +564,8 @@ nav {
     background-color: var(--clr_main);
     display: flex;
     justify-content: space-between;
-    margin-top: -1px;
-    margin-right: -1px;
-    margin-left: -1px;
-    padding: 1lh;
+    margin: -1px -1px 0;
+    padding: 1.5%;
 }
 
 .booking_icons img {
@@ -550,11 +576,12 @@ nav {
     display: none;
 }
 
-/* BOOKINGS FØRSTE SIDE*/
+/* --- FØRSTE DEL - REJSEBESKRIVELSE ---*/
+
 .booking_1 {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto 1fr auto; 
+    grid-template-rows: auto 1fr auto;
     gap: 10px; 
     position: relative;
     height: 65vh;
@@ -582,7 +609,6 @@ nav {
     font-family: var(--l_font);
 }
 
-
 .booking_1_txt {
     grid-column: 1 / span 2; 
     grid-row: 2 / span 4; 
@@ -603,7 +629,8 @@ nav {
     margin-right: 1lh;
 }
 
-/* Bookings første side Vælg antal rejsende */
+/* VÆLG ANTAL REJSENDE */
+
 .booking_ppl_travelling {
     display: flex;
     align-items: center;
@@ -632,7 +659,8 @@ nav {
     cursor: pointer;
 }
 
-/* BOOKINGS ANDEN SIDE */
+/* --- ANDEN DEL - UDFYLD PERSONINFO --- */
+
 .booking_2 {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -650,17 +678,19 @@ nav {
     font-family: var(--l_font);
 }
 
-
 .booking_2 input {
     margin: 1lh;
-    height: 2.5vh;
     padding: 1vw;
     border: 2px solid var(--clr_main);
-    font-family: var(--main_font);
+    outline: none;
+}
+
+.booking_2 input::placeholder {
     font-size: var(--xs_font);
 }
 
-/* Booking_2: Styling af de enkelte input bokse */
+/* INPUT-FELTER */
+
 .booking_info1 {
     grid-row: 2 ;
     grid-column: 1 / span 2;
@@ -677,7 +707,7 @@ nav {
 
 .booking_info2 {
     grid-row: 3;
-    grid-column: 1/ span 2;
+    grid-column: 1 / span 2;
 }
 
 .booking_info2 input:first-child {
@@ -702,7 +732,6 @@ nav {
 .booking_info3 input:nth-child(2) {
     width: 12%;
     margin-right: 2%;
-
 }
 
 .booking_info4 {
@@ -715,7 +744,8 @@ nav {
     margin-right: 2%;
 }
 
-/* BOOKINGS TREJDE SIDE */
+/* --- TREDJE DEL - BETALINGSMETODE --- */
+
 .booking_3 {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -741,7 +771,6 @@ nav {
     margin-right: 1lh;
 }
 
-
 .booking_check {
     display: inline-block;
     width: 0.8lh;
@@ -753,7 +782,7 @@ nav {
     margin-top: 0.5lh;
 }
 
-/* Booking_3: Placering af checkbokse */
+/* CHECK-BOKSE */
 
 .booking_check1 {
     grid-row: 2;
@@ -783,15 +812,17 @@ nav {
     margin-right: 0.4lh;
 }
 
-/* Booking_3: Placering og styling af input */
+/* INPUT-FELTER */
+
 .booking_3 input {
     grid-column: 1 / span 2;
-    height: 2.5vh;
     padding: 1vw;
-    border: 2px solid var(--clr_main);
-    font-family: var(--main_font);
+    border: 2px solid var(--clr_main);    
+    outline: none;
+}
+
+.booking_3 input::placeholder {
     font-size: var(--xs_font);
-    
 }
 
 .booking3_card_no {
@@ -814,7 +845,8 @@ nav {
     width: 25%;
 }
 
-/* BOOKINGS FJERDE SIDE */
+/* --- FJERDE DEL --- */
+
 .booking_4 {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -889,7 +921,11 @@ nav {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 3% 5%;
+    margin: 3% 10%;
+}
+
+.info_welcome h5 {
+    font-size: var(--m_font);
 }
 
 .travel_info {
@@ -987,18 +1023,8 @@ nav {
 }
 
 .contact_form input {
-    border: 0.1rem solid var(--clr_dark);
-    background-color: transparent;
     width: 100%;
     padding: 1.5%;
-}
-
-.contact_form input::placeholder {
-    color: var(--clr_dark);
-    font-family: var(--main_font);
-    font-size: var(--xs_font);
-    font-weight: 300;
-    opacity: .8;
 }
 
 .contact_form button {
@@ -1008,17 +1034,12 @@ nav {
 }
 
 .contact_form textarea { 
-    border: 0.1rem solid var(--clr_dark);
-    background-color: transparent;
-    width: 100%;
-    color: var(--clr_dark);
-    font-family: var(--main_font);
-    font-size: var(--xs_font);
     font-weight: 300;
+    height: 8rem;
     opacity: .8;
     padding: 2%;
     resize: none;
-    height: 8rem;
+    width: 100%;
 }
 
 .faq {
@@ -1041,16 +1062,15 @@ nav {
     padding: 2.5%;
 }
 
-/* ------------------
-    Polen rejseside
---------------------- */
+/* --------------------
+    POLEN REJSESIDE
+----------------------- */
 
 .travels_heading {
-    position: absolute;
-    color: var(--clr_light);
     align-self: center;
-    margin-top: 20%;
-
+    color: var(--clr_light);
+    margin-top: 15%;
+    position: absolute;
 }
 
 .travels_main {
@@ -1067,15 +1087,16 @@ nav {
 }
 
 .travels_text {
-    padding: 0 20%;
-    text-align: center;
-    
+    padding: 1% 20%;
+    text-align: justify;
 }
+
+/* --- INFO SEKTION --- */
 
 .travels_info {
     display: flex;
     flex-direction: row;
-    padding: 10% 17%;
+    padding: 10%;
     column-gap: 12%;
 }
 
@@ -1091,18 +1112,19 @@ nav {
 }
 
 .mini_text {
-    font-size: var(--xs_font);
+    font-size: var(--s_font);
 }
 
 .asterisk {
     color: var(--clr_accent);
+    font-size: var(--m_font);
     font-weight: 600;
 }
 
 .travels_booking {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 2rem;
     width: 50%;
 }
 
@@ -1111,24 +1133,26 @@ nav {
 }
 
 .travels_book {
-    width: 60%;
     align-self: center;
+    margin-top: 5%;
     padding: 2%;
-    margin-top: 15%;
+    width: 60%;
 }
+
+/* --- RUTE SEKTION --- */
 
 .travels_rute {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5% 10%;
+    padding: 0 10%;
 }
 
 .rute_text {
+    align-items: center;
+    column-gap: 8%;
     display: flex;
     flex-direction: row;
-    column-gap: 8%;
-    align-items: flex-end;
     padding-top: 5%;
 }
 
@@ -1136,11 +1160,13 @@ nav {
     max-width: 35%;
 }
 
+/* --- GALLERI SEKTION --- */
+
 .travels_gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7% 5%;
+    padding: 5%;
 }
 
 .travels_year {
@@ -1158,14 +1184,18 @@ nav {
     display: flex;
     flex-direction: column;
     width: 80%;
-    
+}
+
+.year_text h2 {
+    margin-top: 0;
 }
 
 .year_gallery {
-    display: flex;
+    display: grid;
     gap: 1rem;
-    flex-wrap: wrap;
-    padding-top: 5%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 3%;
 }
 
 /* ------------------
@@ -1213,6 +1243,10 @@ footer h3 {
     width: 20%;
 }
 
+.some img:hover {
+    opacity: .7;
+}
+
 .links {
     align-items: flex-end;
     display: flex;
@@ -1245,6 +1279,7 @@ footer h3 {
 .news form input {
     border: none;
     background-color: transparent;
+    outline: var(--clr_light);
     padding: 1% 2%;
     width: 75%;
 }
@@ -1252,8 +1287,6 @@ footer h3 {
 .news form input::placeholder {
     color: var(--clr_light);
     font-size: var(--xs_font);
-    font-weight: 300;
-    opacity: .8;
 }
 
 .news form button {
