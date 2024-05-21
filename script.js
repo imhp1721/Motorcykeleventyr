@@ -8,14 +8,22 @@ function toggleSubMenu(menuId, arrowId) {
     // Tjek om undermenuen er åben
     const isOpen = subMenu.classList.contains("show");
 
-    // Konstant til alle undermenuer
+    // Konstanter til alle undermenuer og alle menu-pile
     const allSubMenus = document.querySelectorAll(".sub_menu");
+    const allArrows = document.querySelectorAll(".menu_arrow");
 
     // Luk alle undermenuer
     allSubMenus.forEach((menu) => {
         if (menu.id !== menuId) {
             menu.classList.remove("show");
         }
+    });
+
+    // Fjern rotation på alle menu-pile
+    allArrows.forEach((arrow) => {
+      if (arrow.id !== arrowId) {
+        arrow.classList.remove("rotate");
+      }
     });
 
     //Luk søgefeltet, hvis det er synligt
